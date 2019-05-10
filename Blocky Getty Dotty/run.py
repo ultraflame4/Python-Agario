@@ -90,10 +90,10 @@ while run:
 
         # SPEED
         if keys[pygame.K_q] or keys[pygame.K_RCTRL]:
-            game_speed = 5
+            game_speed = 0
 
         else:
-            game_speed = 25
+            game_speed = 3
 
 
         if keys[pygame.K_LEFT] or keys[pygame.K_a]:
