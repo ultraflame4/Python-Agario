@@ -24,7 +24,8 @@ black = (0, 0, 0)
 game_speed = 25
 dot_spawn = True
 Start_menu = True
-Pause = 9
+Pause = False
+val = 0
 while run:
     #INPUIT
     keys = pygame.key.get_pressed()
@@ -35,12 +36,15 @@ while run:
         if event.type == pygame.QUIT:
             run = False
     #Pause
-
-    if keys[pygame.K_SPACE]:
+    if keys[pygame.K_p]:
+        direction_m = direction
         direction = 0
-        block_x = 400
-        block_y = 500
-        Start_menu = False
+        Pause = True
+        pygame.display.update()
+    if keys[pygame.K_c]:
+        direction = direction_m
+        Pause = False
+    if Pause:
         screen.blit(pause_image, (0, 100))
         pygame.display.update()
     #----------------------------------------------
@@ -51,8 +55,9 @@ while run:
         screen.blit(controls_image, (0, 0))
 
         pygame.display.update()
-
-    if Start_menu == False or Pause == False:
+    if keys[pygame.K_SPACE]:
+        Start_menu = False
+    if Start_menu == False and Pause == False:
         pygame.draw.line(screen, white, (0, 100), (800, 100), 5)
 
         pygame.draw.line(screen, white, (500, 0), (500, 100), 5)
@@ -79,11 +84,17 @@ while run:
             block_y = 500
             block_x = 400
             lifes -= 1
+            dot_spawn = True
         if block_x == 0 or block_x == 790:
             direction = 0
             block_y = 500
             block_x = 400
+            dot_spawn = True
             lifes -= 1
+        if lifes == 0:
+            Score = 0
+            lifes = 3
+            dot_spawn = True
         #----------Movements----------------------------
         #1-LEFT   2- Right    3- Up    4-Down   CTRL / q - speed up
         keys = pygame.key.get_pressed()
@@ -95,7 +106,7 @@ while run:
         else:
             game_speed = 3
 
-
+    #UP DOWn Left Right
         if keys[pygame.K_LEFT] or keys[pygame.K_a]:
             direction = 1
         elif keys[pygame.K_RIGHT]or keys[pygame.K_d]:
