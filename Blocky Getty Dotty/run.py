@@ -23,6 +23,9 @@ vel = 1
 black = (0, 0, 0)
 game_speed = 25
 dot_spawn = True
+dot_spawn2 = True
+dot_spawn3 = True
+dot_spawn4 = True
 Start_menu = True
 Pause = False
 val = 0
@@ -47,6 +50,9 @@ while run:
     if Pause:
         screen.blit(pause_image, (0, 100))
         pygame.display.update()
+    #
+    
+        
     #----------------------------------------------
     #DISPLAY
     #Start
@@ -78,6 +84,12 @@ while run:
         #Dots
         if dot_spawn == False:
             pygame.draw.rect(screen, dot_color, (dot_x, dot_y, 7, 7))
+        if dot_spawn2 == False:
+            pygame.draw.rect(screen, dot_color2, (dot_x2, dot_y2, 7, 7))
+        if dot_spawn3 == False:
+            pygame.draw.rect(screen, dot_color3, (dot_x3, dot_y3, 7, 7))
+        if dot_spawn4 == False:
+            pygame.draw.rect(screen, dot_color4, (dot_x4, dot_y4, 7, 7))
         #death--------------------------------
         if block_y < 104 or block_y == 890:
             direction = 0
@@ -85,16 +97,22 @@ while run:
             block_x = 400
             lifes -= 1
             dot_spawn = True
+            dot_spawn2 = True
+            dot_spawn3 = True
         if block_x == 0 or block_x == 790:
             direction = 0
             block_y = 500
             block_x = 400
             dot_spawn = True
+            dot_spawn2 = True
+            dot_spawn3 = True
             lifes -= 1
         if lifes == 0:
             Score = 0
             lifes = 3
             dot_spawn = True
+            dot_spawn2 = True
+            dot_spawn3 = True
         #----------Movements----------------------------
         #1-LEFT   2- Right    3- Up    4-Down   CTRL / q - speed up
         keys = pygame.key.get_pressed()
@@ -139,3 +157,39 @@ while run:
                 print('DOT Y == BLOCK Y ')
                 Score += 1
                 dot_spawn = True
+    #dot 2
+        if dot_spawn2 == True:
+            dot_x2 = random.randint(10, 780)
+            dot_y2 = random.randint(114, 880)
+            dot_color2 = (random.randint(50, 255), random.randint(50, 255), random.randint(50, 255))
+            dot_spawn2 = False
+        if block_x <= dot_x2 and (block_x + 10) >= dot_x2:
+            print('DOT X == BLOCK X')
+            if block_y <= dot_y2 and (block_y + 10) >= dot_y2:
+                print('DOT Y == BLOCK Y ')
+                Score += 1
+                dot_spawn2 = True
+    #dot 3
+        if dot_spawn3 == True:
+            dot_x3 = random.randint(10, 780)
+            dot_y3 = random.randint(114, 880)
+            dot_color3 = (random.randint(50, 255), random.randint(50, 255), random.randint(50, 255))
+            dot_spawn3 = False
+        if block_x <= dot_x3 and (block_x + 10) >= dot_x3:
+            print('DOT X == BLOCK X')
+            if block_y <= dot_y3 and (block_y + 10) >= dot_y3:
+                print('DOT Y == BLOCK Y ')
+                Score += 1
+                dot_spawn3 = True
+    #dot4
+        if dot_spawn4 == True:
+            dot_x4 = random.randint(10, 780)
+            dot_y4 = random.randint(114, 880)
+            dot_color4 = (random.randint(50, 255), random.randint(50, 255), random.randint(50, 255))
+            dot_spawn4 = False
+        if block_x <= dot_x4 and (block_x + 10) >= dot_x4:
+            print('DOT X == BLOCK X')
+            if block_y <= dot_y4 and (block_y + 10) >= dot_y4:
+                print('DOT Y == BLOCK Y ')
+                Score += 1
+                dot_spawn4 = True
