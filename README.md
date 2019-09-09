@@ -1,12 +1,12 @@
 # Python Agario
-### ~~Blocky Getty Dotty~~
-
 ## MAJOR REWRITE UNDERWAY
-
+### ~~Blocky Getty Dotty~~
 # Description:
 
   Basically Agario but in Python and singleplayer and offline
-  
+# Instruction:
+extract "Python Agario.zip"
+Run "Run.cpython-37.pyc"
 
 
 # Changelog:
