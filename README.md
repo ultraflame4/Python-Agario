@@ -10,7 +10,9 @@
 
 
 # Changelog:
-#### Changed name from 'Blocky Getty Dotty' to 'Python Agario'
+## Up Next: GUI \ HUD
+- Changed name from 'Blocky Getty Dotty' to 'Python Agario'
+- Finshed Player Movement , Controls
 
 
 
