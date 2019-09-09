@@ -1,15 +1,15 @@
 # Python Agario
 ### ~~Blocky Getty Dotty~~
 
-### MAJOR REWRITE UNDERWAY
+## MAJOR REWRITE UNDERWAY
 
-### Description:
+# Description:
 
   Basically Agario but in Python and singleplayer and offline
   
 
 
-### Changelog:
+# Changelog:
 #### Changed name from 'Blocky Getty Dotty' to 'Python Agario'
 
 
