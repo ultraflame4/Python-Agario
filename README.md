@@ -1,4 +1,5 @@
 # Python Agario
+### ~~Blocky Getty Dotty~~
 
 ### MAJOR REWRITE UNDERWAY
 
@@ -13,7 +14,7 @@
 
 
 
-## Warning Any Instructions & Changelog  Below Only Applies To Older Versions
+***Warning Any Instructions & Changelog  Below Only Applies To Older Versions
 
 Instruction In The Game   (PAUSE IT)
 
