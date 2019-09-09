@@ -11,6 +11,7 @@
 
 # Changelog:
 ## Up Next: GUI \ HUD
+## Update Complete Rewrite 0.1 (rewrite 0.1)
 - Changed name from 'Blocky Getty Dotty' to 'Python Agario'
 - Finshed Player Movement , Controls
 
