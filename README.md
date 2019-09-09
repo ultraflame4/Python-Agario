@@ -10,25 +10,19 @@
 
 
 ### Changelog:
-#### changed name from 'Blocky Getty Dotty' to 'Python Agario'
+#### Changed name from 'Blocky Getty Dotty' to 'Python Agario'
 
 
 
-***Warning Any Instructions & Changelog  Below Only Applies To Older Versions
-
-Instruction In The Game   (PAUSE IT)
+~~Instruction In The Game   (PAUSE IT)~~
 
 
-Added More Dots
-Lives System Implemented
-(scores Resets Upon Death)
-.
-.
-.
-.
-.
-#Modules needed#.
-Random,.
-pygame,.
-time.
+~~Added More Dots~~
+~~Lives System Implemented~~
+~~(scores Resets Upon Death)~~
+
+~~Modules needed:~~
+~~Random,~~
+~~pygame,~~
+~~time.~~
 
