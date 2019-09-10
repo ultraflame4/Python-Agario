@@ -10,8 +10,13 @@ Run "Run.cpython-37.pyc"
 
 
 # Changelog:
-## Up Next: GUI \ HUD
-## Update Complete Rewrite 0.1 (rewrite 0.1)
+## Up Next: Da dots
+- add in the lil dots
+## Update(rw 0.1): User Interface
+
+- Main user interface is complete
+
+## Update(rewrite 0.1): Complete Rewrite 0.1 
 - Changed name from 'Blocky Getty Dotty' to 'Python Agario'
 - Finshed Player Movement , Controls
 
