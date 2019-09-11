@@ -12,9 +12,14 @@ Extract "Python Agario.zip"
 
 
 # Changelog:
-## Up Next: Da dots
-- add in the lil dots
-## Update(rw 0.1): User Interface
+## Update(rw 0.5): Release!
+### First Rewrite Release
+- removed lifes counter
+- Score counter now works
+- added dots
+- dots functions correctly
+
+## Update(rw 0.2): User Interface
 
 - Main user interface is complete
 
