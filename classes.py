@@ -47,7 +47,6 @@ class player:
         pygame.draw.rect(self.surface, self.color, self.rect)
 
 
-        print('Player pos X: ' + str(self.rect[0]) + ' Y: ' + str(self.rect[1]))
 
 class dot:
     def __init__(self, surface):
@@ -56,9 +55,13 @@ class dot:
         self.y = random.randint(50, 650)
         self.width = 10
         self.height = 10
+        self.rect = pygame.rect.Rect(self.x, self.y, self.width, self.height)
     def draw(self):
-        pygame.draw.rect(self.surface, random.choice(colors.basic), (self.x, self.y, self.width, self.height))
-
+        pygame.draw.rect(self.surface, random.choice(colors.basic), self.rect)
+    def generate(self):
+        self.x = random.randint(0, 650)
+        self.y = random.randint(50, 650)
+        self.rect = pygame.rect.Rect(self.x, self.y, self.width, self.height)
 class lives:
     def __init__(self, livesINT=0):
         self.lifes = livesINT
@@ -71,6 +74,5 @@ class lives:
 
         self.lifes -= number
 
-    def set(self, score):
-
-        self.lifes = score
+    def set(self, setLifes):
+        self.lifes = setLifes
