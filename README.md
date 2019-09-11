@@ -1,12 +1,14 @@
 # Python Agario
-## MAJOR REWRITE UNDERWAY
-### ~~Blocky Getty Dotty~~
 # Description:
 
   Basically Agario but in Python and singleplayer and offline
-# Instruction:
-extract "Python Agario.zip"
-Run "Run.cpython-37.pyc"
+## Instruction:
+Extract "Python Agario.zip"
+### For Windows, 
+**Run "Start.bat"**
+### For Everything Else:
+**Run "main.pyc" directly or from terminal\console**
+### For Source Code , "pygame" module needed
 
 
 # Changelog:
