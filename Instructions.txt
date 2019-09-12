@@ -1,0 +1,10 @@
+To Start Program:
+	Run Start.py
+If it Fails,
+Try :
+Start - Alternate.py
+
+If it Still Fails:
+	Run both with console
+	and post error report here:
+			https://github.com/ultraflame4/Python-Agario/issues

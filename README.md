@@ -12,13 +12,14 @@ Extract "Python Agario.zip"
 
 
 # Changelog:
-## Update(rw0.6-pre): Small Changes
+## Update(rw0.6-pre): Compatibility Update
+- Addressing Compatibility Issues
 - Player now grows the more dots they eat.
 - Player and dots size changed
 
 ## Update(rw 0.5): Release!
 ### First Rewrite Release
-- removed lifes counter
+- removed life counter
 - Score counter now works
 - added dots
 - dots functions correctly
