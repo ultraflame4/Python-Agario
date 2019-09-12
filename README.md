@@ -4,7 +4,7 @@
   Basically Agario but in Python and singleplayer and offline
 ## Instruction:
 Extract "Python Agario.zip"
-### For Windows, 
+### For Windows,
 **Run "Start.bat"**
 ### For Everything Else:
 **Run "main.pyc" directly or from terminal\console**
@@ -12,6 +12,10 @@ Extract "Python Agario.zip"
 
 
 # Changelog:
+## Update(rw0.6-pre): Small Changes
+- Player now grows the more dots they eat.
+- Player and dots size changed
+
 ## Update(rw 0.5): Release!
 ### First Rewrite Release
 - removed lifes counter
@@ -23,7 +27,7 @@ Extract "Python Agario.zip"
 
 - Main user interface is complete
 
-## Update(rewrite 0.1): Complete Rewrite 0.1 
+## Update(rewrite 0.1): Complete Rewrite 0.1
 - Changed name from 'Blocky Getty Dotty' to 'Python Agario'
 - Finshed Player Movement , Controls
 
@@ -40,4 +44,3 @@ Extract "Python Agario.zip"
 ~~Random,~~
 ~~pygame,~~
 ~~time.~~
-
