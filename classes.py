@@ -17,7 +17,7 @@ class Score:
 
         self.score = score
 
-class player:
+class playerObj:
     def __init__(self,surface,color,w=10,h=10,x=10,y=10):
         self.surface = surface
         self.color = color
@@ -28,22 +28,8 @@ class player:
         self.rect = pygame.rect.Rect((self.X, self.Y, self.width, self.height))
         self.player = pygame.draw.rect(self.surface, self.color, self.rect)
         self.surfaceSize = pygame.display.get_surface()
-    def movement(self):
-        key = pygame.key.get_pressed()
-        if key[pygame.K_a] and self.rect[0] > 0:
-            self.rect.move_ip((-(self.width/2)), 0)
-
-        if key[pygame.K_d] and (self.rect[0] + self.width) < 700:
-            self.rect.move_ip((self.width/2), 0)
-
-        if key[pygame.K_w] and self.rect[1] > 50:
-            self.rect.move_ip(0, (-(self.height/2)))
-
-        if key[pygame.K_s] and (self.rect[1] + self.height) < 700:
-            self.rect.move_ip(0, (self.height/2))
 
     def draw(self):
-        self.movement()
         pygame.draw.rect(self.surface, self.color, self.rect)
 
 
@@ -53,8 +39,8 @@ class dot:
         self.surface = surface
         self.x = random.randint(0, 650)
         self.y = random.randint(50, 650)
-        self.width = 10
-        self.height = 10
+        self.width = 5
+        self.height = 5
         self.rect = pygame.rect.Rect(self.x, self.y, self.width, self.height)
     def draw(self):
         pygame.draw.rect(self.surface, random.choice(colors.basic), self.rect)
