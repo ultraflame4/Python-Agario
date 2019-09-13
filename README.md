@@ -12,6 +12,17 @@ Extract "Python Agario.zip"
 
 
 # Changelog:
+## Update(rw0.7-Alpha): Alpha Phase
+- Now Entering Alpha Phase
+- There Are now 100 Dots
+- Added viruses
+- Added a counter for Player Size
+- adjusted dots and player Size
+- player can now grow bigger
+- fixed source code Compatibility
+- Note: This version may or not be compiled. Only Source code available for download
+-       From now on only versions that specify they have a release will have a release
+
 ## Update(rw0.6-pre): Compatibility Update
 - Addressing Compatibility Issues
 - Player now grows the more dots they eat.

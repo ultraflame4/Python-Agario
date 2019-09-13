@@ -4,27 +4,28 @@ import colors
 from classes import *
 import interface
 import gameEngine
+import interface
 
 pygame.init()
 
 screen = pygame.display.set_mode((700, 700))
 
 pygame.display.set_caption('Python Agario')
-
+pygame.display.set_icon(pygame.image.load("python-Agario.png"))
 run = True
 player = gameEngine.playerEngine(screen)
 scoreboard = Score()
 dotGroup = gameEngine.dotEngine(screen, player.Player.rect)
+viruses = gameEngine.virusEngine(screen, player)
+
+
+
 while run:
     pygame.time.delay(60)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
               run = False
-    screen.fill(colors.azure)
 
-    dotGroup.rectUpdate(player.Player.rect)
-    dotGroup.pos_check(scoreboard, player)
-    dotGroup.draw()
-    player.draw()
-    interface.gui(screen, scoreboard)
-    pygame.display.update()
+    #Graphics
+
+    interface.draw(screen, player, scoreboard, dotGroup, viruses)
