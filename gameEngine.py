@@ -388,7 +388,7 @@ class virusEngine:
         if selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.drawLogic(selfVirus):
             selfVirus.generate()
             self.playerInstance.deEnlarge(10)
-        elif selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.playerInstance.Player.rect[2] > 1:
+        elif selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.playerInstance.Player.rect[2] > 15:
             self.playerInstance.deEnlarge(5)
 
     def update(self, scoreObj):

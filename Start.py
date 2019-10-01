@@ -1,4 +1,4 @@
-#!venv/Scripts/python
+#! venv/Scripts/python
 import pygame
 import colors
 from classes import *
