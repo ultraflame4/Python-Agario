@@ -5,15 +5,18 @@
 ## Instruction:
 Extract "Python Agario.zip"
 
-### Outdated
-> ### For Windows,
+> ### Outdated
+> #### For Windows,
 > **Run "Start.bat" **
-> ### For Everything Else:
+> #### For Everything Else:
 > **Run "main.pyc" directly or from terminal\console**
-> ### For Source Code , "pygame" module needed
+> #### For Source Code , "pygame" module needed
 
 
 # Changelog:
+## Update(rw1-Alpha): update **ONE**
+- Bug Fixes
+- Compatibility Issues _should be fixed_
 ## Update(rw0.7-Alpha): Alpha Phase
 - Now Entering Alpha Phase
 - There Are now 100 Dots
