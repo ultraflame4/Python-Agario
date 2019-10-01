@@ -1,14 +1,16 @@
 # Python Agario
 # Description:
 
-  Basically Agario but in Python and singleplayer and offline
+  Basically Agario but in Python and singleplayer and offline and writted by a noob and less features
 ## Instruction:
 Extract "Python Agario.zip"
-### For Windows,
-**Run "Start.bat"**
-### For Everything Else:
-**Run "main.pyc" directly or from terminal\console**
-### For Source Code , "pygame" module needed
+
+### Outdated
+> ### For Windows,
+> **Run "Start.bat" **
+> ### For Everything Else:
+> **Run "main.pyc" directly or from terminal\console**
+> ### For Source Code , "pygame" module needed
 
 
 # Changelog:
