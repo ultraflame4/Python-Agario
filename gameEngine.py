@@ -66,9 +66,10 @@ class playerEngine:
         self.Player.draw()
 
 class virusEngine:
-    def __init__(self, surface, player):
+    def __init__(self, surface, player,score):
         self.surface = surface
         self.playerInstance = player
+        self.score = score
         ###
         self.virusObj_0 = virusDot(surface)
 
@@ -85,14 +86,16 @@ class virusEngine:
         self.drawLogic(self.virusObj_0)
 
     def mass_check(self, scoreboard):
-        self.check_engine(self.virusObj_0, scoreboard)
+        self.check_collision(self.virusObj_0, scoreboard)
 
-    def check_engine(self, selfVirus, scoreboard):
+    def check_collision(self, selfVirus, scoreboard):
         if selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.drawLogic(selfVirus):
             selfVirus.generate()
             self.playerInstance.deEnlarge(10)
         elif selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.playerInstance.Player.rect[2] > 15:
             self.playerInstance.deEnlarge(5)
+        self.score.add(random.randrange(5,30))
+
 
     def update(self, scoreObj):
         self.mass_check(scoreObj)

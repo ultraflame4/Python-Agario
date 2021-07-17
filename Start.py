@@ -13,7 +13,7 @@ run = True
 player = gameEngine.playerEngine(screen)
 scoreboard = Score()
 dotGroup = gameEngine.dotEngine(screen, player.Player.rect)
-viruses = gameEngine.virusEngine(screen, player)
+viruses = gameEngine.virusEngine(screen, player,scoreboard)
 
 
 
