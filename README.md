@@ -1,25 +1,32 @@
-#### ~~Python Agario~~
-
 # Python Bgario
 
 # Description:
 
   Basically Agario but in Python and singleplayer and offline and writted by a noob and less features
+
+
+
+## Running instructions
+
+**Executable releases are not supported anymore.**
+
+
+
+
+
+
+
+
+<strike>
 ## Instruction:
+
 Extract "Python Agario.zip" into a Folder
 
 Run "Start.exe"
 
-> ### Outdated
-> #### For Windows,
-> **Run "Start.bat" **
-> #### For Everything Else:
-> **Run "main.pyc" directly or from terminal\console**
->
-> #### For Source Code , "pygame" module needed
-
 
 # Changelog:
+
 ## Update(rw1-Alpha): update **ONE**
 - Bug Fixes
 - Compatibility Issues _should be fixed_
@@ -56,7 +63,7 @@ Run "Start.exe"
 - Changed name from 'Blocky Getty Dotty' to 'Python Agario'
 - Finshed Player Movement , Controls
 
-
+</strike>
 
 ~~Instruction In The Game   (PAUSE IT)~~
 

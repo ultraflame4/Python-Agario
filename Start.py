@@ -1,8 +1,6 @@
-#! venv/Scripts/python
+
 import pygame
-import colors
 from classes import *
-import interface
 import gameEngine
 import interface
 
