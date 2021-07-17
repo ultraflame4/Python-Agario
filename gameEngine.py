@@ -34,6 +34,7 @@ class dotEngine:
 class playerEngine:
     def __init__(self, surface):
         self.Player = playerObj(surface, colors.azure3, 10, 10, 335, 340)
+        self.speed=5
 
     def enlarge(self):
         if self.Player.rect[2] < 25:
@@ -50,16 +51,16 @@ class playerEngine:
     def movement(self):
         key = pygame.key.get_pressed()
         if key[pygame.K_a] and self.Player.rect[0] > 0:
-            self.Player.rect.move_ip((-(self.Player.rect[3]/2)), 0)
+            self.Player.rect.move_ip(-self.speed, 0)
 
         if key[pygame.K_d] and (self.Player.rect[0] + self.Player.rect[2]) < 700:
-            self.Player.rect.move_ip((self.Player.rect[3]/2), 0)
+            self.Player.rect.move_ip(self.speed, 0)
 
         if key[pygame.K_w] and self.Player.rect[1] > 50:
-            self.Player.rect.move_ip(0, (-(self.Player.rect[2]/2)))
+            self.Player.rect.move_ip(0, -self.speed)
 
         if key[pygame.K_s] and (self.Player.rect[1] + self.Player.rect[3]) < 700:
-            self.Player.rect.move_ip(0, (self.Player.rect[2]/2))
+            self.Player.rect.move_ip(0, self.speed)
 
     def draw(self):
         self.movement()
@@ -89,12 +90,15 @@ class virusEngine:
         self.check_collision(self.virusObj_0, scoreboard)
 
     def check_collision(self, selfVirus, scoreboard):
-        if selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.drawLogic(selfVirus):
-            selfVirus.generate()
-            self.playerInstance.deEnlarge(10)
-        elif selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.playerInstance.Player.rect[2] > 15:
-            self.playerInstance.deEnlarge(5)
-        self.score.add(random.randrange(5,30))
+        if selfVirus.rect.colliderect(self.playerInstance.Player.rect):
+            if self.drawLogic(selfVirus):
+                selfVirus.generate()
+                self.playerInstance.deEnlarge(10)
+
+            if self.playerInstance.Player.rect[2] > 15:
+                self.playerInstance.deEnlarge(5)
+
+            self.score.add(random.randrange(5, 30))
 
 
     def update(self, scoreObj):
