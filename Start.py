@@ -1,5 +1,4 @@
 
-import pygame
 from classes import *
 import gameEngine
 import interface
