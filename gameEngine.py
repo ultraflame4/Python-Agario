@@ -72,7 +72,8 @@ class virusEngine:
         self.playerInstance = player
         self.score = score
         ###
-        self.virusObj_0 = virusDot(surface)
+
+        self.viruses = [virusDot(surface) for i in range (10)]
 
     def drawLogic(self, virusObj):
         if self.playerInstance.Player.rect[2] >= virusObj.rect[2]:
@@ -84,13 +85,15 @@ class virusEngine:
             virusObj.draw()
             return False
     def draw(self):
-        self.drawLogic(self.virusObj_0)
+        for i in self.viruses:
+            self.drawLogic(i)
 
     def mass_check(self, scoreboard):
-        self.check_collision(self.virusObj_0, scoreboard)
+        for i in self.viruses:
+            self.check_collision(i)
 
-    def check_collision(self, selfVirus, scoreboard):
-        if selfVirus.rect.colliderect(self.playerInstance.Player.rect):
+    def check_collision(self, selfVirus):
+        if selfVirus.rect.colliderect(self.playerInstance.Player.rect) and self.playerInstance.Player.rect[2]>selfVirus.rect[2]: # check if player is bigger than virus
             if self.drawLogic(selfVirus):
                 selfVirus.generate()
                 self.playerInstance.deEnlarge(10)
