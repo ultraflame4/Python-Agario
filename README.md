@@ -2,7 +2,7 @@
 
 # Description:
 
-  Basically Agario but in Python and singleplayer and offline and writted by a noob and less features
+  Basically Agar.io but in Python and singleplayer and offline and writted by a noob and less features
 
 
 
@@ -10,12 +10,16 @@
 
 **Executable releases are not supported anymore.**
 
+**Python 3.7+ is required**
 
+1. Clone this repository or download and extract its content to a folder.
 
+2. Install the dependencies
+    >  pip install -r [pathToFolderOrRepo]/requirements.txt
 
-
-
-
+4. Run the program!
+    > python [pathToFolderOrRepo]/Start.py
+   
 
 <strike>
 ## Instruction:
