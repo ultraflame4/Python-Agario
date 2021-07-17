@@ -67,14 +67,15 @@ class lives:
         self.lifes = setLifes
 
 class virusDot:
+    width = 30
+    height = 30
     def __init__(self, surface):
         self.surface = surface
         self.x = random.randint(0, 650)
         self.y = random.randint(50, 650)
-        self.width = 30
-        self.height = 30
-        self.rect = pygame.rect.Rect(self.x, self.y, self.width, self.height)
-        self.rect2 = pygame.rect.Rect((self.x + 5) , (self.y + 5), (self.width - 10), (self.height - 10))
+
+        self.rect = pygame.rect.Rect(self.x, self.y, virusDot.width, virusDot.height)
+        self.rect2 = pygame.rect.Rect((self.x + 5) , (self.y + 5), (virusDot.width - 10), (virusDot.height - 10))
 
     def draw(self):
         pygame.draw.rect(self.surface, colors.green, self.rect)
@@ -83,5 +84,5 @@ class virusDot:
     def generate(self):
         self.x = random.randint(0, 650)
         self.y = random.randint(50, 650)
-        self.rect = pygame.rect.Rect(self.x, self.y, self.width, self.height)
-        self.rect2 = pygame.rect.Rect((self.x + 5) , (self.y + 5), (self.width - 10), (self.height - 10))
+        self.rect = pygame.rect.Rect(self.x, self.y, virusDot.width, virusDot.height)
+        self.rect2 = pygame.rect.Rect((self.x + 5) , (self.y + 5), (virusDot.width - 10), (virusDot.height - 10))
