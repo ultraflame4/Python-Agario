@@ -7,7 +7,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((700, 700))
 
-pygame.display.set_caption('Python Agario')
+pygame.display.set_caption('Python-Bgario')
 pygame.display.set_icon(pygame.image.load("python-Agario.png"))
 run = True
 player = gameEngine.playerEngine(screen)
