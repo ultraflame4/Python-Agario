@@ -13,6 +13,6 @@ def draw(surface, player, scoreboard, dotGroup, viruses):
     surface.fill(colors.azure)
     dotGroup.rectUpdate(player.Player.rect)
     dotGroup.update(scoreboard, player)
-    viruses.update(scoreboard)
+    viruses.update()
     gui(surface, scoreboard, player)
     pygame.display.update()

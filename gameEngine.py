@@ -88,7 +88,7 @@ class virusEngine:
             self.playerInstance.draw()
             self.draw_viruses()
 
-    def mass_check(self, scoreboard):
+    def mass_check(self):
         for i in self.viruses:
             self.check_collision(i)
 
@@ -100,6 +100,6 @@ class virusEngine:
             self.score.add(random.randrange(5, 30))
 
 
-    def update(self, scoreObj):
-        self.mass_check(scoreObj)
+    def update(self):
+        self.mass_check()
         self.draw()
